@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Réclamations</title>
+    <style>
+        /* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* En-tête */
+header {
+    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Contenu principal */
+main {
+    flex: 1;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+section {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+section h2 {
+    color: #3a7bd5;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+section p {
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+/* Bouton */
+.btn {
+    display: inline-block;
+    background: #3a7bd5;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(58, 123, 213, 0.2);
+}
+
+.btn:hover {
+    background: #2c5fb3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(58, 123, 213, 0.3);
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #2c3e50;
+    color: #ecf0f1;
+    margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    header p, section p {
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur la plateforme de gestion des réclamations</h1>
+        <p>Veuillez vous connecter pour accéder à votre espace.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Connexion</h2>
+            <p>Cliquez sur le bouton ci-dessous pour accéder à la page de connexion.</p>
+            <a href="php/login.php" class="btn">Se connecter</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Gestion des Réclamations. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+/* Styles pour la page de profil */
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4e73df;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.password-toggle {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    color: #6c757d;
+}

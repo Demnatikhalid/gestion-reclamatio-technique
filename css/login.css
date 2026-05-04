@@ -1,0 +1,91 @@
+
+/* General Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Arial', sans-serif;
+background-color: #f4f4f9;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+color: #333;
+}
+
+/* Form Container */
+form {
+background: #ffffff;
+padding: 2rem;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+width: 100%;
+max-width: 400px;
+animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Form Labels */
+form label {
+display: block;
+margin-bottom: 0.5rem;
+font-weight: bold;
+color: #555;
+}
+
+/* Form Inputs */
+form input[type="text"],
+form input[type="password"] {
+width: 100%;
+padding: 0.75rem;
+margin-bottom: 1rem;
+border: 1px solid #ddd;
+border-radius: 5px;
+font-size: 1rem;
+transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+border-color: #007bff;
+outline: none;
+}
+
+/* Submit Button */
+form button[type="submit"] {
+width: 100%;
+padding: 0.75rem;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 5px;
+font-size: 1rem;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+background-color: #0056b3;
+}
+
+/* Error Message */
+form + p {
+margin-top: 1rem;
+color: #ff4d4d;
+text-align: center;
+font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(-20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
